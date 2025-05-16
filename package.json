@@ -2,8 +2,9 @@
   "name": "client",
   "version": "1.0.0",
   "scripts": {
-    "build": "vite build",
-    "postbuild": "echo 'Client build complete.'"
+    "build": "npx vite build",
+    "postbuild": "echo 'Client build complete.'",
+    "vercel-build": "npm install && npm run build"
   },
   "dependencies": {
     "arina-shared": "git+https://github.com/adsurkasur/Arina-SharedPackage.git",
