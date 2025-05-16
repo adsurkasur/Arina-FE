@@ -12,10 +12,12 @@ import {
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "demo-key",
-  authDomain: `${import.meta.env.VITE_FIREBASE_PROJECT_ID || "demo"}.firebaseapp.com`,
+  authDomain: `${import.meta.env.VITE_FIREBASE_AUTH_ID || "demo"}.firebaseapp.com`,
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "demo",
-  storageBucket: `${import.meta.env.VITE_FIREBASE_PROJECT_ID || "demo"}.appspot.com`,
+  storageBucket: `${import.meta.env.VITE_FIREBASE_BUCKET_ID || "demo"}.appspot.com`,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "demo-sender-id",
   appId: import.meta.env.VITE_FIREBASE_APP_ID || "demo-app-id",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "demo-measurement-id",
 };
 
 // Debug: Log Firebase config and env variables at runtime (remove in production)
