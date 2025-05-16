@@ -6,9 +6,9 @@
     "postbuild": "echo 'Client build complete.'"
   },
   "dependencies": {
-    "arina-shared": "git+https://github.com/adsurkasur/Arina-SharedPackage.git",
-    "vite": "^5.0.0"
+    "arina-shared": "git+https://github.com/adsurkasur/Arina-SharedPackage.git"
   },
   "devDependencies": {
+    "vite": "^5.0.0"
   }
 }
