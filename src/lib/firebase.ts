@@ -18,6 +18,19 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID || "demo-app-id",
 };
 
+// Debug: Log Firebase config and env variables at runtime (remove in production)
+if (typeof window !== "undefined") {
+  // Only log in browser, not during SSR/build
+  // eslint-disable-next-line no-console
+  console.log("[Firebase Config]", firebaseConfig);
+  // eslint-disable-next-line no-console
+  console.log("[Env] VITE_FIREBASE_API_KEY:", import.meta.env.VITE_FIREBASE_API_KEY);
+  // eslint-disable-next-line no-console
+  console.log("[Env] VITE_FIREBASE_PROJECT_ID:", import.meta.env.VITE_FIREBASE_PROJECT_ID);
+  // eslint-disable-next-line no-console
+  console.log("[Env] VITE_FIREBASE_APP_ID:", import.meta.env.VITE_FIREBASE_APP_ID);
+}
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
