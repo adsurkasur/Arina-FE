@@ -85,6 +85,7 @@
   "devDependencies": {
     "@replit/vite-plugin-cartographer": "latest",
     "@replit/vite-plugin-runtime-error-modal": "latest",
+    "@tailwindcss/postcss": "^4.1.7",
     "@tailwindcss/typography": "latest",
     "@types/connect-pg-simple": "latest",
     "@types/express": "latest",
