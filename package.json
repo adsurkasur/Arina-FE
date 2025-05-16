@@ -7,5 +7,8 @@
   },
   "dependencies": {
     "arina-shared": "git+https://github.com/adsurkasur/Arina-SharedPackage.git"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
   }
 }
