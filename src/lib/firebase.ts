@@ -11,13 +11,13 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "demo-key",
-  authDomain: `${import.meta.env.VITE_FIREBASE_AUTH_ID || "demo"}.firebaseapp.com`,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "demo",
-  storageBucket: `${import.meta.env.VITE_FIREBASE_BUCKET_ID || "demo"}.appspot.com`,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "demo-sender-id",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "demo-app-id",
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "demo-measurement-id",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: `${import.meta.env.VITE_FIREBASE_AUTH_ID,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: `${import.meta.env.VITE_FIREBASE_BUCKET_ID,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Debug: Log Firebase config and env variables at runtime (remove in production)
@@ -31,6 +31,14 @@ if (typeof window !== "undefined") {
   console.log("[Env] VITE_FIREBASE_PROJECT_ID:", import.meta.env.VITE_FIREBASE_PROJECT_ID);
   // eslint-disable-next-line no-console
   console.log("[Env] VITE_FIREBASE_APP_ID:", import.meta.env.VITE_FIREBASE_APP_ID);
+  // eslint-disable-next-line no-console
+  console.log("[Env] VITE_FIREBASE_AUTH_DOMAIN:", import.meta.env.VITE_FIREBASE_AUTH_DOMAIN);
+  // eslint-disable-next-line no-console
+  console.log("[Env] VITE_FIREBASE_STORAGE_BUCKET:", import.meta.env.VITE_FIREBASE_STORAGE_BUCKET);
+  // eslint-disable-next-line no-console
+  console.log("[Env] VITE_FIREBASE_MESSAGING_SENDER_ID:", import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID);
+  // eslint-disable-next-line no-console
+  console.log("[Env] VITE_FIREBASE_MEASUREMENT_ID:", import.meta.env.VITE_FIREBASE_MEASUREMENT_ID);
 }
 
 // Initialize Firebase
