@@ -7,6 +7,7 @@
     "vercel-build": "npm install && chmod +x ./node_modules/.bin/vite && npm run build"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.76.1",
     "arina-shared": "git+https://github.com/adsurkasur/Arina-SharedPackage.git",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
