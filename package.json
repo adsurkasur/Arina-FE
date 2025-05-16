@@ -6,7 +6,9 @@
     "postbuild": "echo 'Client build complete.'"
   },
   "dependencies": {
-    "arina-shared": "git+https://github.com/adsurkasur/Arina-SharedPackage.git"
+    "arina-shared": "git+https://github.com/adsurkasur/Arina-SharedPackage.git",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "vite": "^5.4.19"
