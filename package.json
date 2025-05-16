@@ -4,7 +4,7 @@
   "scripts": {
     "build": "npx vite build",
     "postbuild": "echo 'Client build complete.'",
-    "vercel-build": "npm install && npm run build"
+    "vercel-build": "npm install && npx vite build"
   },
   "dependencies": {
     "arina-shared": "git+https://github.com/adsurkasur/Arina-SharedPackage.git",
