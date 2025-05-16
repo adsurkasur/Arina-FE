@@ -72,7 +72,6 @@
     "rehype-raw": "latest",
     "remark-gfm": "latest",
     "tailwind-merge": "latest",
-    "tailwindcss-animate": "latest",
     "tw-animate-css": "latest",
     "uuid": "latest",
     "vaul": "latest",
@@ -84,9 +83,6 @@
   "devDependencies": {
     "@replit/vite-plugin-cartographer": "latest",
     "@replit/vite-plugin-runtime-error-modal": "latest",
-    "@tailwindcss/postcss": "^4.1.7",
-    "@tailwindcss/typography": "latest",
-    "@tailwindcss/vite": "^4.1.7",
     "@types/connect-pg-simple": "latest",
     "@types/express": "latest",
     "@types/express-session": "latest",
