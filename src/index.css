@@ -198,7 +198,8 @@
   }
 
   body {
-    @apply font-sans antialiased bg-cream text-foreground;
+    @apply antialiased text-gray-900 bg-white;
+    background-color: hsl(var(--background)); /* fallback for dynamic theme */
   }
 }
 
@@ -234,7 +235,7 @@
 }
 
 .tool-card:hover {
-  @apply transform -translate-y-0.5 shadow-lg;
+  @apply -translate-y-0.5 shadow-lg;
 }
 
 /* Animate CollapsibleContent (dropdown menu) */
@@ -327,7 +328,7 @@
 body,
 html,
 * {
-  font-family: 'Inter', sans-serif !important;
+  /* font-family: 'Inter', sans-serif !important; */
 }
 
 #chatMessages {
